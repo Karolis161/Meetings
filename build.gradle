@@ -4,9 +4,12 @@ plugins {
 	id 'java'
 }
 
-group = 'com.visma.meetings'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+jar {
+	enabled = false
+	manifest {
+		attributes 'Main-Class': 'com.visma.Meetings'
+	}
+}
 
 repositories {
 	mavenCentral()
